@@ -8,6 +8,7 @@ Two ways the user is notified on availability of vaccine.
 
 Messages are sent using a trial Twilio account.
 Set TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN as environment variables.
+Edit the script to add the twilio registered phone numbers.
 
 This script has an infinite loop that will run and check for availability of vaccines.
 
