@@ -36,7 +36,7 @@ while(True):
                         from_='+12406212013',
                         to='+919496067575'
                     )
-            for i in range (100):
-                duration = 1000  # milliseconds
-                freq = 440  # Hz
-                winsound.Beep(freq, duration)
+                for i in range (100):
+                    duration = 1000  # milliseconds
+                    freq = 440  # Hz
+                    winsound.Beep(freq, duration)
