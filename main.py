@@ -35,8 +35,8 @@ while(True):
                 print("found vaccine")
                 message = client.messages.create(
                         body="Vaccine available at "+ center['name'] +", Pincode: "+ str(center['pincode']),
-                        from_='+12406212013',
-                        to='+919496067575'
+                        from_='+1xxxxxxxxxx',
+                        to='+91xxxxxxxxxx'
                     )
                 for i in range (5):
                     duration = 1000  # milliseconds
