@@ -5,6 +5,7 @@ import os
 from twilio.rest import Client
 import datetime
 import winsound
+import time
 
 
 curr_time = datetime.datetime.now()
@@ -21,6 +22,7 @@ auth_token = os.environ['TWILIO_AUTH_TOKEN']
 client = Client(account_sid, auth_token)
 
 while(True):
+    time.sleep(30)
     response = requests.request("GET", url, headers=headers, data=payload)
 
     response_text = response.text
@@ -36,7 +38,7 @@ while(True):
                         from_='+12406212013',
                         to='+919496067575'
                     )
-                for i in range (100):
+                for i in range (5):
                     duration = 1000  # milliseconds
                     freq = 440  # Hz
                     winsound.Beep(freq, duration)
